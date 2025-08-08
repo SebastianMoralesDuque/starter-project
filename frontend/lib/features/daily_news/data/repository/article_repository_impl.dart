@@ -7,40 +7,25 @@ import 'package:news_app_clean_architecture/features/daily_news/data/models/arti
 import 'package:news_app_clean_architecture/core/resources/data_state.dart';
 import 'package:news_app_clean_architecture/features/daily_news/domain/entities/article.dart';
 import 'package:news_app_clean_architecture/features/daily_news/domain/repository/article_repository.dart';
-
-import '../data_sources/remote/news_api_service.dart';
+import 'package:news_app_clean_architecture/features/daily_news/data/data_sources/remote/firestore_api_service.dart';
 
 class ArticleRepositoryImpl implements ArticleRepository {
-  final NewsApiService _newsApiService;
+  final FirestoreApiService _firestoreApiService;
   final AppDatabase _appDatabase;
-  ArticleRepositoryImpl(this._newsApiService,this._appDatabase);
+
+  ArticleRepositoryImpl(this._firestoreApiService, this._appDatabase);
   
   @override
   Future<DataState<List<ArticleModel>>> getNewsArticles() async {
    try {
-    final httpResponse = await _newsApiService.getNewsArticles(
-      apiKey:newsAPIKey,
-      country:countryQuery,
-      category:categoryQuery,
-    );
-
-    if (httpResponse.response.statusCode == HttpStatus.ok) {
-      return DataSuccess(httpResponse.data);
-    } else {
-      return DataFailed(
-        DioError(
-          error: httpResponse.response.statusMessage,
-          response: httpResponse.response,
-          type: DioErrorType.response,
-          requestOptions: httpResponse.response.requestOptions
-        )
-      );
-    }
-   } on DioError catch(e){
-    return DataFailed(e);
+    final articles = await _firestoreApiService.getArticles();
+    return DataSuccess(articles);
+   } catch(e){
+    return DataFailed(DioError(requestOptions: RequestOptions(path: ''), error: e.toString()));
    }
   }
 
+  @override
   @override
   Future<List<ArticleModel>> getSavedArticles() async {
     return _appDatabase.articleDAO.getArticles();
@@ -55,5 +40,4 @@ class ArticleRepositoryImpl implements ArticleRepository {
   Future<void> saveArticle(ArticleEntity article) {
     return _appDatabase.articleDAO.insertArticle(ArticleModel.fromEntity(article));
   }
-  
 }

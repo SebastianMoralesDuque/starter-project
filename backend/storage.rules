@@ -2,6 +2,23 @@ rules_version = '2';
 
 service firebase.storage {
   match /b/{bucket}/o {
-    //TODO: WRITE ANY NECESSARY STORAGE RULES HERE
+    // Reglas para la carpeta de archivos de usuario
+    match /userFiles/{userId}/{allFiles=**} {
+      // Permitir lectura si el usuario está autenticado y el userId coincide con su UID
+      allow read: if request.auth != null && request.auth.uid == userId;
+      // Permitir escritura si el usuario está autenticado y el userId coincide con su UID
+      allow write: if request.auth != null && request.auth.uid == userId;
     }
+
+    // Reglas para la carpeta de imágenes de artículos (lectura pública)
+    match /article_images/{fileName} {
+      allow write: if request.auth != null;
+      allow read: if true;
+    }
+
+    // Denegar acceso a cualquier otra ruta por defecto
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
 }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "745417857225",
+    "project_id": "starterbackend22",
+    "storage_bucket": "starterbackend22.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745417857225:android:1df6b75b4c67b18e305518",
+        "android_client_info": {
+          "package_name": "com.example.news_app_clean_architecture"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiiamPTEsiep6GenBhwRcX5yiyQPAGP3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

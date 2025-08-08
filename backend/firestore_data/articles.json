@@ -1,0 +1,34 @@
+{
+  "articles": {
+    "article1": {
+      "id": 1,
+      "author": "googleUser123",
+      "title": "Artículo de prueba Google 1",
+      "description": "Este es el contenido del primer artículo de prueba. Es un texto de ejemplo para demostrar la funcionalidad de carga.",
+      "url": "https://example.com/article1",
+      "urlToImage": "https://firebasestorage.googleapis.com/v0/b/starterbackend22.firebasestorage.app/o/Screenshot_2025-05-12_22-10-12.png?alt=media&token=afcf6c06-dbbe-4b92-a768-fec5622329ff",
+      "publishedAt": "2025-08-07T22:51:00.000Z",
+      "content": "Contenido completo del primer artículo, más detallado si es necesario."
+    },
+    "article2": {
+      "id": 2,
+      "author": "googleUser456",
+      "title": "Segundo Artículo de Prueba",
+      "description": "Aquí va el contenido del segundo artículo. Se enfoca en diferentes aspectos de la prueba de datos.",
+      "url": "https://example.com/article2",
+      "urlToImage": "https://firebasestorage.googleapis.com/v0/b/starterbackend22.firebasestorage.app/o/Screenshot_2025-05-12_22-10-12.png?alt=media&token=afcf6c06-dbbe-4b92-a768-fec5622329ff",
+      "publishedAt": "2025-08-07T22:52:00.000Z",
+      "content": "Contenido completo del segundo artículo, con más información relevante."
+    },
+    "article3": {
+      "id": 3,
+      "author": "googleUser789",
+      "title": "Un Tercer Artículo Interesante",
+      "description": "El tercer artículo contiene información variada para asegurar que la carga del frontend maneje diferentes tipos de contenido.",
+      "url": "https://example.com/article3",
+      "urlToImage": "https://firebasestorage.googleapis.com/v0/b/starterbackend22.firebasestorage.app/o/Screenshot_2025-05-12_22-10-12.png?alt=media&token=afcf6c06-dbbe-4b92-a768-fec5622329ff",
+      "publishedAt": "2025-08-07T22:53:00.000Z",
+      "content": "Contenido completo del tercer artículo, para una prueba exhaustiva."
+    }
+  }
+}
