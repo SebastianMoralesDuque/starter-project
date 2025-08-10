@@ -1,0 +1,551 @@
+<svg width="1400" height="900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definición de estilos para modo oscuro -->
+  <defs>
+    <!-- Gradientes para cada capa (modo oscuro) -->
+    <linearGradient id="presentationGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a237e;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#283593;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <linearGradient id="businessGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1b5e20;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#2e7d32;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <linearGradient id="dataGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e65100;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ef6c00;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- Sombra suave para modo oscuro -->
+    <filter id="shadowDark" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+    
+    <!-- Flecha elegante -->
+    <marker id="arrowheadDark" markerWidth="12" markerHeight="10" 
+            refX="11" refY="5" orient="auto">
+      <polygon points="0 0, 12 5, 0 10" fill="#b0bec5" />
+    </marker>
+    
+    <!-- Icono de carpeta (modo oscuro) -->
+    <g id="folder-icon-dark">
+      <path d="M0,4 L0,16 L16,16 L16,6 L8,6 L6,4 Z" fill="#ffa726" stroke="#ff9800" stroke-width="0.5"/>
+    </g>
+    
+    <!-- Icono de archivo (modo oscuro) -->
+    <g id="file-icon-dark">
+      <rect x="0" y="0" width="12" height="16" rx="1" fill="#37474f" stroke="#546e7a" stroke-width="0.5"/>
+      <line x1="2" y1="4" x2="10" y2="4" stroke="#78909c" stroke-width="0.5"/>
+      <line x1="2" y1="7" x2="10" y2="7" stroke="#78909c" stroke-width="0.5"/>
+      <line x1="2" y1="10" x2="10" y2="10" stroke="#78909c" stroke-width="0.5"/>
+    </g>
+    
+    <!-- Efecto de brillo -->
+    <filter id="brightness">
+      <feColorMatrix type="matrix" values="1.2 0 0 0 0  0 1.2 0 0 0  0 0 1.2 0 0  0 0 0 1 0"/>
+    </filter>
+  </defs>
+  
+  <!-- Fondo oscuro -->
+  <rect width="1400" height="900" fill="#121212" rx="12" ry="12"/>
+  
+  <!-- Título con animación de pulso -->
+  <text x="700" y="40" font-family="'Segoe UI', Arial, sans-serif" font-size="28" 
+        font-weight="300" text-anchor="middle" fill="#e0e0e0">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite"/>
+    Arquitectura Symmetry
+  </text>
+  <text x="700" y="70" font-family="'Segoe UI', Arial, sans-serif" font-size="20" 
+        font-weight="300" text-anchor="middle" fill="#9e9e9e">
+    <animate attributeName="opacity" values="0.7;0.9;0.7" dur="4s" repeatCount="indefinite"/>
+    Clean Architecture Adaptada
+  </text>
+  
+  <!-- Arquitectura (lado izquierdo) -->
+  <g transform="translate(50, 100)">
+    <!-- Presentation Layer con animación de respiración -->
+    <rect width="500" height="140" rx="12" ry="12" 
+          fill="url(#presentationGradDark)" stroke="#3949ab" stroke-width="1.5" filter="url(#shadowDark)">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    
+    <text x="250" y="35" font-family="'Segoe UI', Arial, sans-serif" font-size="20" 
+          font-weight="500" text-anchor="middle" fill="#c5cae9">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="5s" repeatCount="indefinite"/>
+      Presentation Layer
+    </text>
+    
+    <!-- Componentes con aparición gradual -->
+    <rect x="30" y="60" width="120" height="60" rx="8" ry="8" 
+          fill="#1a237e" stroke="#3949ab" stroke-width="1.2" filter="url(#shadowDark)">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" fill="freeze"/>
+    </rect>
+    <text x="90" y="95" font-family="'Segoe UI', Arial, sans-serif" font-size="16" 
+          text-anchor="middle" fill="#e8eaf6">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" fill="freeze"/>
+      Screens
+    </text>
+    
+    <rect x="190" y="60" width="120" height="60" rx="8" ry="8" 
+          fill="#1a237e" stroke="#3949ab" stroke-width="1.2" filter="url(#shadowDark)">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="0.3s" fill="freeze"/>
+    </rect>
+    <text x="250" y="95" font-family="'Segoe UI', Arial, sans-serif" font-size="16" 
+          text-anchor="middle" fill="#e8eaf6">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="0.3s" fill="freeze"/>
+      Blocs
+    </text>
+    
+    <rect x="350" y="60" width="120" height="60" rx="8" ry="8" 
+          fill="#1a237e" stroke="#3949ab" stroke-width="1.2" filter="url(#shadowDark)">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="0.6s" fill="freeze"/>
+    </rect>
+    <text x="410" y="95" font-family="'Segoe UI', Arial, sans-serif" font-size="16" 
+          text-anchor="middle" fill="#e8eaf6">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="0.6s" fill="freeze"/>
+      Widgets
+    </text>
+    
+    <!-- Business Layer con animación de respiración -->
+    <rect y="170" width="500" height="180" rx="12" ry="12" 
+          fill="url(#businessGradDark)" stroke="#43a047" stroke-width="1.5" filter="url(#shadowDark)">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="6s" begin="2s" repeatCount="indefinite"/>
+    </rect>
+    
+    <text x="250" y="205" font-family="'Segoe UI', Arial, sans-serif" font-size="20" 
+          font-weight="500" text-anchor="middle" fill="#c8e6c9">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="5s" begin="1.5s" repeatCount="indefinite"/>
+      Business Layer
+    </text>
+    
+    <!-- Componentes con aparición gradual -->
+    <rect x="30" y="230" width="120" height="50" rx="8" ry="8" 
+          fill="#1b5e20" stroke="#43a047" stroke-width="1.2" filter="url(#shadowDark)">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="0.9s" fill="freeze"/>
+    </rect>
+    <text x="90" y="260" font-family="'Segoe UI', Arial, sans-serif" font-size="16" 
+          text-anchor="middle" fill="#e8f5e9">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="0.9s" fill="freeze"/>
+      Entities
+    </text>
+    
+    <rect x="190" y="230" width="120" height="50" rx="8" ry="8" 
+          fill="#1b5e20" stroke="#43a047" stroke-width="1.2" filter="url(#shadowDark)">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1.2s" fill="freeze"/>
+    </rect>
+    <text x="250" y="260" font-family="'Segoe UI', Arial, sans-serif" font-size="16" 
+          text-anchor="middle" fill="#e8f5e9">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1.2s" fill="freeze"/>
+      Params
+    </text>
+    
+    <rect x="30" y="290" width="120" height="50" rx="8" ry="8" 
+          fill="#1b5e20" stroke="#43a047" stroke-width="1.2" filter="url(#shadowDark)">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1.5s" fill="freeze"/>
+    </rect>
+    <text x="90" y="320" font-family="'Segoe UI', Arial, sans-serif" font-size="16" 
+          text-anchor="middle" fill="#e8f5e9">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1.5s" fill="freeze"/>
+      Use Cases
+    </text>
+    
+    <rect x="190" y="290" width="120" height="50" rx="8" ry="8" 
+          fill="#1b5e20" stroke="#43a047" stroke-width="1.2" filter="url(#shadowDark)">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1.8s" fill="freeze"/>
+    </rect>
+    <text x="250" y="315" font-family="'Segoe UI', Arial, sans-serif" font-size="14" 
+          text-anchor="middle" fill="#e8f5e9">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1.8s" fill="freeze"/>
+      Repository
+    </text>
+    <text x="250" y="330" font-family="'Segoe UI', Arial, sans-serif" font-size="14" 
+          text-anchor="middle" fill="#e8f5e9">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1.8s" fill="freeze"/>
+      Interfaces
+    </text>
+    
+    <!-- Indicador de independencia con rotación suave -->
+    <circle cx="420" cy="255" r="30" fill="#1b5e20" stroke="#43a047" stroke-width="1.5" filter="url(#shadowDark)">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="2.1s" fill="freeze"/>
+    </circle>
+    <text x="420" y="250" font-family="'Segoe UI', Arial, sans-serif" font-size="14" 
+          font-weight="500" text-anchor="middle" fill="#c8e6c9">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="2.1s" fill="freeze"/>
+      Independiente
+    </text>
+    <text x="420" y="265" font-family="'Segoe UI', Arial, sans-serif" font-size="12" 
+          text-anchor="middle" fill="#c8e6c9">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="2.1s" fill="freeze"/>
+      Sin dependencias
+    </text>
+    
+    <!-- Data Layer con animación de respiración -->
+    <rect y="380" width="500" height="140" rx="12" ry="12" 
+          fill="url(#dataGradDark)" stroke="#ff9800" stroke-width="1.5" filter="url(#shadowDark)">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="6s" begin="4s" repeatCount="indefinite"/>
+    </rect>
+    
+    <text x="250" y="415" font-family="'Segoe UI', Arial, sans-serif" font-size="20" 
+          font-weight="500" text-anchor="middle" fill="#ffe0b2">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="5s" begin="3s" repeatCount="indefinite"/>
+      Data Layer
+    </text>
+    
+    <!-- Componentes con aparición gradual -->
+    <rect x="30" y="440" width="120" height="60" rx="8" ry="8" 
+          fill="#e65100" stroke="#ff9800" stroke-width="1.2" filter="url(#shadowDark)">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="2.4s" fill="freeze"/>
+    </rect>
+    <text x="90" y="475" font-family="'Segoe UI', Arial, sans-serif" font-size="16" 
+          text-anchor="middle" fill="#fff3e0">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="2.4s" fill="freeze"/>
+      Data Sources
+    </text>
+    
+    <rect x="190" y="440" width="120" height="60" rx="8" ry="8" 
+          fill="#e65100" stroke="#ff9800" stroke-width="1.2" filter="url(#shadowDark)">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="2.7s" fill="freeze"/>
+    </rect>
+    <text x="250" y="475" font-family="'Segoe UI', Arial, sans-serif" font-size="16" 
+          text-anchor="middle" fill="#fff3e0">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="2.7s" fill="freeze"/>
+      Models
+    </text>
+    
+    <rect x="350" y="440" width="120" height="60" rx="8" ry="8" 
+          fill="#e65100" stroke="#ff9800" stroke-width="1.2" filter="url(#shadowDark)">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="3s" fill="freeze"/>
+    </rect>
+    <text x="410" y="465" font-family="'Segoe UI', Arial, sans-serif" font-size="14" 
+          text-anchor="middle" fill="#fff3e0">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="3s" fill="freeze"/>
+      Repository
+    </text>
+    <text x="410" y="480" font-family="'Segoe UI', Arial, sans-serif" font-size="14" 
+          text-anchor="middle" fill="#fff3e0">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="3s" fill="freeze"/>
+      Implementations
+    </text>
+  </g>
+  
+  <!-- Estructura de Carpetas (lado derecho) -->
+  <g transform="translate(600, 100)">
+    <rect width="750" height="780" rx="12" ry="12" 
+          fill="#1e1e1e" stroke="#424242" stroke-width="1.5" filter="url(#shadowDark)">
+      <animate attributeName="opacity" from="0" to="1" dur="1.5s" fill="freeze"/>
+    </rect>
+    
+    <text x="375" y="40" font-family="'Segoe UI', Arial, sans-serif" font-size="22" 
+          font-weight="500" text-anchor="middle" fill="#e0e0e0">
+      <animate attributeName="opacity" from="0" to="1" dur="1s" fill="freeze"/>
+      Estructura de Carpetas
+    </text>
+    
+    <!-- lib -->
+    <g transform="translate(30, 70)">
+      <use href="#folder-icon-dark" x="0" y="0">
+        <animate attributeName="opacity" from="0" to="1" dur="0.5s" fill="freeze"/>
+      </use>
+      <text x="25" y="14" font-family="'Segoe UI', Arial, sans-serif" font-size="18" 
+            font-weight="500" fill="#e0e0e0">
+        <animate attributeName="opacity" from="0" to="1" dur="0.5s" fill="freeze"/>
+        lib
+      </text>
+      
+      <!-- config -->
+      <g transform="translate(20, 30)">
+        <use href="#folder-icon-dark" x="0" y="0" fill="#ab47bc">
+          <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.5s" fill="freeze"/>
+        </use>
+        <text x="25" y="14" font-family="'Segoe UI', Arial, sans-serif" font-size="16" 
+              fill="#ce93d8">
+          <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.5s" fill="freeze"/>
+          config
+        </text>
+        
+        <!-- routes -->
+        <g transform="translate(20, 25)">
+          <use href="#file-icon-dark" x="0" y="0">
+            <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.7s" fill="freeze"/>
+          </use>
+          <text x="20" y="12" font-family="'Segoe UI', Arial, sans-serif" font-size="14" 
+                fill="#b0bec5">
+            <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.7s" fill="freeze"/>
+            routes
+          </text>
+        </g>
+        
+        <!-- theme -->
+        <g transform="translate(20, 50)">
+          <use href="#file-icon-dark" x="0" y="0">
+            <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.9s" fill="freeze"/>
+          </use>
+          <text x="20" y="12" font-family="'Segoe UI', Arial, sans-serif" font-size="14" 
+                fill="#b0bec5">
+            <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.9s" fill="freeze"/>
+            theme
+          </text>
+        </g>
+      </g>
+      
+      <!-- core -->
+      <g transform="translate(20, 120)">
+        <use href="#folder-icon-dark" x="0" y="0" fill="#42a5f5">
+          <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.1s" fill="freeze"/>
+        </use>
+        <text x="25" y="14" font-family="'Segoe UI', Arial, sans-serif" font-size="16" 
+              fill="#90caf9">
+          <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.1s" fill="freeze"/>
+          core
+        </text>
+        
+        <!-- constants -->
+        <g transform="translate(20, 25)">
+          <use href="#file-icon-dark" x="0" y="0">
+            <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.3s" fill="freeze"/>
+          </use>
+          <text x="20" y="12" font-family="'Segoe UI', Arial, sans-serif" font-size="14" 
+                fill="#b0bec5">
+            <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.3s" fill="freeze"/>
+            constants
+          </text>
+        </g>
+        
+        <!-- resources -->
+        <g transform="translate(20, 50)">
+          <use href="#file-icon-dark" x="0" y="0">
+            <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.5s" fill="freeze"/>
+          </use>
+          <text x="20" y="12" font-family="'Segoe UI', Arial, sans-serif" font-size="14" 
+                fill="#b0bec5">
+            <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.5s" fill="freeze"/>
+            resources
+          </text>
+        </g>
+        
+        <!-- usecase -->
+        <g transform="translate(20, 75)">
+          <use href="#file-icon-dark" x="0" y="0">
+            <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.7s" fill="freeze"/>
+          </use>
+          <text x="20" y="12" font-family="'Segoe UI', Arial, sans-serif" font-size="14" 
+                fill="#b0bec5">
+            <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.7s" fill="freeze"/>
+            usecase
+          </text>
+        </g>
+      </g>
+      
+      <!-- shared -->
+      <g transform="translate(20, 240)">
+        <use href="#folder-icon-dark" x="0" y="0" fill="#66bb6a">
+          <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.9s" fill="freeze"/>
+        </use>
+        <text x="25" y="14" font-family="'Segoe UI', Arial, sans-serif" font-size="16" 
+              fill="#a5d6a7">
+          <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.9s" fill="freeze"/>
+          shared
+        </text>
+        
+        <!-- {feature} -->
+        <g transform="translate(20, 25)">
+          <use href="#folder-icon-dark" x="0" y="0" fill="#81c784">
+            <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.1s" fill="freeze"/>
+          </use>
+          <text x="25" y="14" font-family="'Segoe UI', Arial, sans-serif" font-size="16" 
+                fill="#a5d6a7">
+            <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.1s" fill="freeze"/>
+            {feature}
+          </text>
+          
+          <!-- data -->
+          <g transform="translate(20, 25)">
+            <use href="#folder-icon-dark" x="0" y="0" fill="#ffa726">
+              <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.3s" fill="freeze"/>
+            </use>
+            <text x="25" y="14" font-family="'Segoe UI', Arial, sans-serif" font-size="15" 
+                  fill="#ffcc80">
+              <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.3s" fill="freeze"/>
+              data
+            </text>
+            
+            <!-- data_sources -->
+            <g transform="translate(20, 25)">
+              <use href="#file-icon-dark" x="0" y="0">
+                <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.5s" fill="freeze"/>
+              </use>
+              <text x="20" y="12" font-family="'Segoe UI', Arial, sans-serif" font-size="13" 
+                    fill="#b0bec5">
+                <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.5s" fill="freeze"/>
+                data_sources
+              </text>
+            </g>
+            
+            <!-- models -->
+            <g transform="translate(20, 50)">
+              <use href="#file-icon-dark" x="0" y="0">
+                <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.7s" fill="freeze"/>
+              </use>
+              <text x="20" y="12" font-family="'Segoe UI', Arial, sans-serif" font-size="13" 
+                    fill="#b0bec5">
+                <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.7s" fill="freeze"/>
+                models
+              </text>
+            </g>
+            
+            <!-- repository -->
+            <g transform="translate(20, 75)">
+              <use href="#file-icon-dark" x="0" y="0">
+                <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.9s" fill="freeze"/>
+              </use>
+              <text x="20" y="12" font-family="'Segoe UI', Arial, sans-serif" font-size="13" 
+                    fill="#b0bec5">
+                <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.9s" fill="freeze"/>
+                repository
+              </text>
+            </g>
+          </g>
+          
+          <!-- domain -->
+          <g transform="translate(20, 140)">
+            <use href="#folder-icon-dark" x="0" y="0" fill="#66bb6a">
+              <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="3.1s" fill="freeze"/>
+            </use>
+            <text x="25" y="14" font-family="'Segoe UI', Arial, sans-serif" font-size="15" 
+                  fill="#a5d6a7">
+              <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="3.1s" fill="freeze"/>
+              domain
+            </text>
+            
+            <!-- entities -->
+            <g transform="translate(20, 25)">
+              <use href="#file-icon-dark" x="0" y="0">
+                <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="3.3s" fill="freeze"/>
+              </use>
+              <text x="20" y="12" font-family="'Segoe UI', Arial, sans-serif" font-size="13" 
+                    fill="#b0bec5">
+                <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="3.3s" fill="freeze"/>
+                entities
+              </text>
+            </g>
+            
+            <!-- repository -->
+            <g transform="translate(20, 50)">
+              <use href="#file-icon-dark" x="0" y="0">
+                <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="3.5s" fill="freeze"/>
+              </use>
+              <text x="20" y="12" font-family="'Segoe UI', Arial, sans-serif" font-size="13" 
+                    fill="#b0bec5">
+                <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="3.5s" fill="freeze"/>
+                repository
+              </text>
+            </g>
+            
+            <!-- use_cases -->
+            <g transform="translate(20, 75)">
+              <use href="#file-icon-dark" x="0" y="0">
+                <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="3.7s" fill="freeze"/>
+              </use>
+              <text x="20" y="12" font-family="'Segoe UI', Arial, sans-serif" font-size="13" 
+                    fill="#b0bec5">
+                <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="3.7s" fill="freeze"/>
+                use_cases
+              </text>
+            </g>
+          </g>
+          
+          <!-- presentation -->
+          <g transform="translate(20, 255)">
+            <use href="#folder-icon-dark" x="0" y="0" fill="#42a5f5">
+              <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="3.9s" fill="freeze"/>
+            </use>
+            <text x="25" y="14" font-family="'Segoe UI', Arial, sans-serif" font-size="15" 
+                  fill="#90caf9">
+              <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="3.9s" fill="freeze"/>
+              presentation
+            </text>
+            
+            <!-- bloc -->
+            <g transform="translate(20, 25)">
+              <use href="#file-icon-dark" x="0" y="0">
+                <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="4.1s" fill="freeze"/>
+              </use>
+              <text x="20" y="12" font-family="'Segoe UI', Arial, sans-serif" font-size="13" 
+                    fill="#b0bec5">
+                <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="4.1s" fill="freeze"/>
+                bloc
+              </text>
+            </g>
+            
+            <!-- screens -->
+            <g transform="translate(20, 50)">
+              <use href="#file-icon-dark" x="0" y="0">
+                <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="4.3s" fill="freeze"/>
+              </use>
+              <text x="20" y="12" font-family="'Segoe UI', Arial, sans-serif" font-size="13" 
+                    fill="#b0bec5">
+                <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="4.3s" fill="freeze"/>
+                screens
+              </text>
+            </g>
+            
+            <!-- widgets -->
+            <g transform="translate(20, 75)">
+              <use href="#file-icon-dark" x="0" y="0">
+                <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="4.5s" fill="freeze"/>
+              </use>
+              <text x="20" y="12" font-family="'Segoe UI', Arial, sans-serif" font-size="13" 
+                    fill="#b0bec5">
+                <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="4.5s" fill="freeze"/>
+                widgets
+              </text>
+            </g>
+          </g>
+        </g>
+      </g>
+      
+      <!-- features -->
+      <g transform="translate(20, 620)">
+        <use href="#folder-icon-dark" x="0" y="0" fill="#ff7043">
+          <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="4.7s" fill="freeze"/>
+        </use>
+        <text x="25" y="14" font-family="'Segoe UI', Arial, sans-serif" font-size="16" 
+              fill="#ffab91">
+          <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="4.7s" fill="freeze"/>
+          features
+        </text>
+        
+        <!-- {feature} -->
+        <g transform="translate(20, 25)">
+          <use href="#folder-icon-dark" x="0" y="0" fill="#ff8a65">
+            <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="4.9s" fill="freeze"/>
+          </use>
+          <text x="25" y="14" font-family="'Segoe UI', Arial, sans-serif" font-size="16" 
+                fill="#ffab91">
+            <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="4.9s" fill="freeze"/>
+            {feature}
+          </text>
+          
+          <text x="0" y="40" font-family="'Segoe UI', Arial, sans-serif" font-size="12" 
+                fill="#9e9e9e" font-style="italic">
+            <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="5.1s" fill="freeze"/>
+            Misma estructura que shared/{feature}
+          </text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Nota sobre test -->
+    <text x="30" y="750" font-family="'Segoe UI', Arial, sans-serif" font-size="16" 
+          fill="#e0e0e0" font-weight="500">
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="5.3s" fill="freeze"/>
+      test/
+    </text>
+    <text x="30" y="770" font-family="'Segoe UI', Arial, sans-serif" font-size="14" 
+          fill="#9e9e9e" font-style="italic">
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="5.5s" fill="freeze"/>
+      → Misma estructura que lib/
+    </text>
+  </g>
+</svg>
