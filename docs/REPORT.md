@@ -82,7 +82,7 @@ Para el futuro, me planteo:
 
    ![Pantalla de Artículos Guardados](Screenshots/7.png)
 
-7. **Pantalla Principal con Menú de Sesión**: Interfaz principal con el menú superior desplegado mostrando "Iniciar Sesión", junto con las tarjetas de noticias habituales y el botón "+".
+7. **Pantalla Principal con Menú de Sesión**: Interfaz principal con el menú superior desplegado mostrando "Iniciar Sesión", junto con las tarjetas de noticias habituales.
 
    ![Pantalla Principal con Menú de Sesión](Screenshots/2.png)
 
