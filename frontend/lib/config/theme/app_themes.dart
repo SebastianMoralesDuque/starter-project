@@ -1,19 +1,29 @@
 import 'package:flutter/material.dart';
 
-ThemeData theme() {
-  return ThemeData(
-    scaffoldBackgroundColor: Colors.white,
-    fontFamily: 'Muli',
-    appBarTheme: appBarTheme()
-  );
-}
+class AppTheme {
+  static ThemeData get light {
+    return ThemeData(
+      useMaterial3: true,
+      colorScheme: ColorScheme.fromSeed(
+        seedColor: Colors.blue,
+        brightness: Brightness.light,
+      ),
+      fontFamily: 'Muli',
+    );
+  }
 
-AppBarTheme appBarTheme() {
-  return const AppBarTheme(
-    color: Colors.white,
-    elevation: 0,
-    centerTitle: true,
-    iconTheme: IconThemeData(color: Color(0XFF8B8B8B)),
-    titleTextStyle: TextStyle(color: Color(0XFF8B8B8B), fontSize: 18),
-  );
+  static ThemeData get dark {
+    return ThemeData(
+      useMaterial3: true,
+      colorScheme: ColorScheme.fromSeed(
+        seedColor: Colors.blue,
+        brightness: Brightness.dark,
+        surface: Colors.grey[850],
+      ),
+      fontFamily: 'Muli',
+      textTheme: const TextTheme(
+        bodyMedium: TextStyle(color: Colors.white),
+      ),
+    );
+  }
 }
