@@ -64,11 +64,11 @@ Para el futuro, me planteo:
 
 2. **Selección de Cuenta de Google**: Aquí se presenta una ventana emergente para elegir una cuenta de Google para continuar con la app "news_app_clean_architecture", mostrando una cuenta de ejemplo (cheviotin200@gmail.com) y la opción para agregar otra cuenta, con información sobre el intercambio de datos como nombre, email y foto de perfil.
 
-   ![Selección de Cuenta de Google](Screenshots/2.png)
+   ![Selección de Cuenta de Google](Screenshots/3.png)
 
 3. **Pantalla Principal de Noticias con Búsqueda**: Interfaz principal titulada "Noticias Diarias" con una barra de búsqueda "Buscar por título" (con "bit" escrito), mostrando una tarjeta de noticia sobre Bitcoin superando los $100,000, con imagen de Trump y Bitcoin, y un botón "+" en la parte inferior.
 
-   ![Pantalla Principal de Noticias con Búsqueda](Screenshots/3.png)
+   ![Pantalla Principal de Noticias con Búsqueda](Screenshots/4.png)
 
 4. **Pantalla Principal de Noticias Vacía**: Interfaz titulada "Noticias Diarias" con una barra de búsqueda "Buscar por título" vacía, mostrando seis placeholders grises donde normalmente aparecerían las tarjetas de noticias, y un botón "+" en la parte inferior, indicando que no hay contenido cargado actualmente.
 
@@ -76,19 +76,19 @@ Para el futuro, me planteo:
 
 5. **Menú Desplegable de Filtros de Tiempo**: Similar a la pantalla principal, pero con un menú desplegado sobre la barra de búsqueda, ofreciendo opciones como "Todos", "Últimas 24 horas", "Últimos 7 días" y "Último mes", junto con tarjetas de noticias visibles, incluyendo una sobre psilocibina.
 
-   ![Menú Desplegable de Filtros de Tiempo](Screenshots/4.png)
+   ![Menú Desplegable de Filtros de Tiempo](Screenshots/9.png)
 
 6. **Pantalla de Artículos Guardados**: Titulada "Artículos Guardados", muestra una lista de artículos favoritos con una tarjeta sobre "La psilocibina muestra potencial...", con opción para eliminar (X) y un mensaje en la parte inferior "Artículo guardado en favoritos".
 
-   ![Pantalla de Artículos Guardados](Screenshots/5.png)
+   ![Pantalla de Artículos Guardados](Screenshots/7.png)
 
 7. **Pantalla Principal con Menú de Sesión**: Interfaz principal con el menú superior desplegado mostrando "Iniciar Sesión", junto con las tarjetas de noticias habituales y el botón "+".
 
-   ![Pantalla Principal con Menú de Sesión](Screenshots/10.png)
+   ![Pantalla Principal con Menú de Sesión](Screenshots/2.png)
 
 8. **Formulario para Añadir Nueva Noticia**: Pantalla "Añadir Nueva Noticia" con campos para "Título del Artículo", "Descripción del Artículo" y "Contenido (Soporta Markdown)", incluyendo ejemplos de beneficios observados y una imagen de un cerebro, con botón "Añadir Noticia" al final.
 
-   ![Formulario para Añadir Nueva Noticia](Screenshots/6.png)
+   ![Formulario para Añadir Nueva Noticia](Screenshots/5.png)
 
 9. **Pantalla de Añadir Nueva Noticia con Error**: Esta interfaz muestra la pantalla "Añadir Nueva Noticia" con campos vacíos para "Título del Artículo", "Descripción del Artículo" y "Contenido (Soporta Markdown)", junto con un mensaje de error en rojo "El título, la descripción y la imagen no pueden estar vacíos". También incluye una sección "Toca para seleccionar una imagen" con un ícono de imagen.
 
@@ -96,15 +96,15 @@ Para el futuro, me planteo:
 
 10. **Pantalla Principal con Notificación de Artículo Añadido**: Interfaz principal mostrando tarjetas de noticias (Bitcoin, científicos exploran mente-cuerpo, psilocibina, nueva terapia), con un mensaje toast en la parte inferior "Artículo añadido con éxito!" y un ícono de carga en una tarjeta.
 
-    ![Pantalla Principal con Notificación de Artículo Añadido](Screenshots/8.png)
+    ![Pantalla Principal con Notificación de Artículo Añadido](Screenshots/6.png)
 
-11. **Pantalla Principal Actualizada con Nuevos Artículos**: Similar a la principal, con tarjetas de noticias actualizadas (Bitcoin, científicos exploran, psilocibina, nueva terapia), barra de búsqueda vacía y el menú superior visible, sin notificaciones activas.
+11. **Pantalla Visualizacion de article**: Muestra un único artículo con su contenido completo (por ejemplo: Bitcoin,) con una tabla y contenido markdown. 
 
-    ![Pantalla Principal Actualizada con Nuevos Artículos](Screenshots/9.png)
+    ![Pantalla Principal Actualizada con Nuevos Artículos](Screenshots/8.png)
 
 12. **Ventana Emergente de Cerrar Sesión**: En la pantalla principal de noticias, aparece un popup "Cerrar Sesión" preguntando "¿Estás seguro de que quieres cerrar sesión?", con opciones "Cancelar" y "Cerrar Sesión", mientras se ven tarjetas de noticias de fondo.
 
-    ![Ventana Emergente de Cerrar Sesión](Screenshots/7.png)
+    ![Ventana Emergente de Cerrar Sesión](Screenshots/10.png)
 
 ---
 
